@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+* {
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+  }
+  html{
+    font-size: 85.5%;
+  }
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    color: #fff;
+    background-color: var(--main-bg) !important;
+    padding: 1rem 0;
+  }
+  .navbar a, .active{
+    color: #fff !important;
+    font-size: 1.1rem;
+  }
+  .navbar-toggler{
+    background-color: grey;
+  }
+  .fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+  }
+  @keyframes rot{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .carousel-item {
+    height: 310px;
+    overflow: hidden;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+  .left_content{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left_content p{
+    font-size: 2rem;
+    filter: drop-shadow(2px 4px 6px #0097e6)
+  }
+  .left_content h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+  .right_content{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text-clr{
+    color: var(--main-color);
+  }
+  .left_content button {
+    padding: 1rem 2rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+  .left_content button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+footer p {
+  margin: 0;
+  line-height: 4rem;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  margin-top: auto;
+}
+/* responsive code  */
+@media (max-width: 768px) {
+  .left_content, .right_content {
+    height: auto;
+    margin: 2em 0;
+  }
+  .left_content h1 {
+    font-size: 2rem;
+  }
+  .carousel-item {
+    height: 200px;
+    overflow: hidden;
+  }
+}
+figure img {
+  filter: drop-shadow(2px 4px 6px #0097e6);
+}
+/* error page css  */
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.errorpage img {
+  width: 100%;
+  height: auto;
+}
+
+/* weather css  */
+.main_content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.temp_form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.temp_form input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.temp_form input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.temp_form input[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.temp_form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.tempInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.top_layer {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.top_layer .day {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.top_layer .today_date {
+  font-size: 18px;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.main_layer {
+  text-align: center;
+}
+
+.city_name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.middle_layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle_layer #temp {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.middle_layer i {
+  font-size: 36px;
+  color: #007bff;
+}
+/* .data_hide{
+  visibility: hidden;
+  transition: all .3s linear;
+} */
+/* Responsive design */
+@media (max-width: 768px) {
+  .temp_form {
+    flex-direction: column;
+  }
+
+  .temp_form input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .tempInfo {
+    width: 90%;
+    padding: 15px;
+  }
+}

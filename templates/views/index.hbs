@@ -1,0 +1,38 @@
+{{>navbar}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-12 ">
+      <div class="left_content">
+        <p>Welcome to Weather App</p>
+        <h1>Get the Latest <span class="text-clr">Weather</span> Info of Your City</h1>
+        <a href="/weather"><button>click now</button></a>
+      </div>
+    </div>
+    <div class="col-md-6 col-12 ">
+      <div class="right_content">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/banner1.avif" class=" w-100" alt="Banner">
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner2.jpeg" class=" w-100" alt="Banner">
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner3.jpeg" class=" w-100" alt="Banner">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{>footer}}

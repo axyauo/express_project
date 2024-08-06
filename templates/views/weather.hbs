@@ -1,0 +1,27 @@
+{{>navbar}}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="main_content">
+        <form class="temp_form">
+          <input type="text" placeholder="Enter City Name" id="cityName" autocomplete="off">
+          <input type="submit" value="search" id="submitBtn">
+        </form>
+      </div>
+      <div class="tempInfo">
+        <div class="top_layer">
+          <p class="day">Tuesday</p>
+          <p class="today_date">06 Aug</p>
+        </div>
+        <div class="main_layer">
+          <p class="city_name" id="city_name">Get Output Here...</p>
+          <div class="middle_layer data_hide">
+            <p id="temp"><span>0</span><sup>o</sup>C</p>
+            <p id="temp_status"><i class="bi bi-cloud-fill"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{>footer}}
